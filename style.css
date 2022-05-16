@@ -1,0 +1,140 @@
+body {
+    background-color: #faf1e6;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+}
+
+
+h1, h3 {
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.one {
+    background-image: url(one.jpeg);
+}
+
+.two {
+    background-image: url(two.jpeg);
+}
+
+.three {
+    background-image: url(three.jpeg);
+}
+
+.four {
+    background-image: url(four.jpeg);
+}
+
+.five {
+    background-image: url(five.jpeg);
+}
+
+.six {
+    background-image: url(six.jpeg);
+}
+ 
+h4 {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    background-color: #fff;
+    color: #000000;
+    opacity: 0;
+}
+.item {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Dancing Script', cursive;
+    flex: 1;
+    position: relative;
+    margin: 5px;
+}
+
+.par {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    background-color: #fff;
+    color: #000000;
+    opacity: 0;
+}
+
+.price {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background-color: #fff;
+    color: #000000;
+    opacity: 0;
+}
+
+.selected {
+    flex: 4;
+}
+
+.selected h4 {
+    font-size: 40px;
+    transition: all 1s ease-in;
+    opacity: 1;
+}
+
+.selected .par {
+    font-size: 20px;
+    transition: all 1s ease-in;
+    opacity: 1;
+}
+
+.selected .price {
+    font-size: 35px;
+    transition: all 1s ease-in;
+    opacity: 1;
+}
+
+label {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.textInput {
+    background-color: #faf1e6;
+    border: none;
+    padding: 12px 20px;
+}
+
+.btn {
+    background-color: #00adb5;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    flex: 1;
+    }
+
+
+    @media all and(max-width: 800px) {
+        h1 {
+          font-size: 40px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+      }
+      
+      @media all and (max-width: 500px) {
+        .two,
+        .five,
+        .six {
+          display: none;
+        }
+      
+        h1, h3 {
+          font-size: 30px;
+        }
+      }
